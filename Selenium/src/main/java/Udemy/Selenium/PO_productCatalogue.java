@@ -35,21 +35,21 @@ public class PO_productCatalogue extends Utility_1{
 		waitForElementToAppear(productBy);
 		return products;
 	}
-	public WebElement getproductbyname(String ProductName) {
+//	public WebElement getproductbyname(String ProductName) {
 		
-		WebElement finalProduct = getProductList().stream().filter(product->
-		 product.findElement(By.cssSelector("b")).getText().equals(ProductName)).findFirst().orElse(null);
+	//	WebElement finalProduct = getProductList().stream().filter(product->
+	//	 product.findElement(By.cssSelector("b")).getText().equals(ProductName)).findFirst().orElse(null);
 		
-		return finalProduct;
+	//	return finalProduct;
 		// finalProduct.findElement(By.cssSelector(".card-body button:last-of-type")).click();
 		 
-	}
-	public void addproducttocart(String ProductName)
-	{
-		WebElement prod = getproductbyname(ProductName);
-		prod.findElement(addtoCart).click();
-		waitForElementToAppear(toastmessage);
-		waitForElementToDisappear(loader);
+	
+//	public void addproducttocart(String ProductName)
+//	{
+//		WebElement prod = getproductbyname(ProductName);
+//		prod.findElement(addtoCart).click();
+//		waitForElementToAppear(toastmessage);
+//		waitForElementToDisappear(loader);
 		 
 	}
 	
@@ -69,4 +69,4 @@ public class PO_productCatalogue extends Utility_1{
 	
 	
 	
-}
+

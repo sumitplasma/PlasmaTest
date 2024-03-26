@@ -1,6 +1,7 @@
 package utility;
 
 import java.time.Duration;
+import org.testng.SkipException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,5 +27,19 @@ public class Utility_1 {
 	{
 	 WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 	 wait.until(ExpectedConditions.invisibilityOf(Ele));
+	}
+	
+	
+	public static void testStatus(String status)
+	{
+		if(status.equalsIgnoreCase("skip"))
+		{
+			throw new SkipException("Skipped");
+		}
+	}
+	
+	public static void test1(String status)
+	{
+		testStatus(status);
 	}
 }

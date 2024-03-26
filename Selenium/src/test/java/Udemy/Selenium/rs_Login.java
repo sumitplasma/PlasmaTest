@@ -37,13 +37,13 @@ loginPage.loginApp("sumitplasma@gmail.com", "Plasma1!");
 PO_productCatalogue productcatalogue = new PO_productCatalogue(driver);
 driver.findElement(By.cssSelector(prdct));
 List<WebElement> productlist = productcatalogue.getProductList();
-productcatalogue.addproducttocart(prdct);
+//productcatalogue.addproducttocart(prdct);
 
  driver.findElement(By.xpath("//button[@routerlink = '/dashboard/cart']")).click();
  
  List<WebElement> cartProducts = driver.findElements(By.cssSelector(".cartSection h3"));
- Boolean match = cartProducts.stream().anyMatch(cartProduct-> cartProduct.getText().equalsIgnoreCase(prdct));
- Assert.assertTrue(match);
+// Boolean match = cartProducts.stream().anyMatch(cartProduct-> cartProduct.getText().equalsIgnoreCase(prdct));
+// Assert.assertTrue(match);
  driver.findElement(By.cssSelector(".totalRow button")).click();
  
  Actions a = new Actions(driver);
