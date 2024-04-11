@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Window;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -25,9 +26,9 @@ public class rs_Login {
 	public void test()
 	{
 		String prdct = "ZARA COAT 3";
-		WebDriver driver = new ChromeDriver();
-		List<WebElement> e=driver.findElements(By.xpath(""));
-		//driver.get("https://www.google.com/");
+		WebDriver driver = new FirefoxDriver();
+		//List<WebElement> e=driver.findElements(By.xpath(""));
+		driver.get("https://www.google.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		PO_loginUser loginPage = new PO_loginUser(driver);
 		loginPage.goTo();
