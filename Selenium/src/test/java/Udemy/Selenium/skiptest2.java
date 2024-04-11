@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
  */
 public class skiptest2 {
 	
-	@Test
+	@Test(enabled=false)
 	public void log()
 	{
 		System.setProperty("configuration.xml","/Users/shubham-qa/Documents/GitCloneSumit/PlasmaTest/Selenium/configuration.xml");
@@ -22,5 +22,20 @@ public class skiptest2 {
 		logger.info("Starting application...");
         logger.error("Encountered an error.s");
         logger.debug("Debugging information...");
+	}
+	
+	@Test(enabled=true)
+	public void reverse()
+	{
+		String s= "a/b$$xA";
+		int l=0; 
+		int r=s.length()-1;
+		for(String c: s.split(""))
+		{
+			if(s.matches("[A-Za-z]"))
+			{
+				System.out.println("Matches");
+			}
+		}
 	}
 }

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-26T14:17:37 IST" name="Suite" finished-at="2024-03-26T14:17:38 IST" duration-ms="531">
+  <suite started-at="2024-03-27T14:05:16 IST" name="Default suite" finished-at="2024-03-27T14:05:16 IST" duration-ms="62">
     <groups>
     </groups>
-    <test started-at="2024-03-26T14:17:37 IST" name="Test" finished-at="2024-03-26T14:17:38 IST" duration-ms="531">
+    <test started-at="2024-03-27T14:05:16 IST" name="Default test" finished-at="2024-03-27T14:05:16 IST" duration-ms="62">
       <class name="Udemy.Selenium.skiptest2">
-        <test-method signature="log()[pri:0, instance:Udemy.Selenium.skiptest2@d9345cd]" started-at="2024-03-26T14:17:37 IST" name="log" finished-at="2024-03-26T14:17:38 IST" duration-ms="480" status="PASS">
+        <test-method signature="reverse()[pri:0, instance:Udemy.Selenium.skiptest2@6bd61f98]" started-at="2024-03-27T14:05:16 IST" name="reverse" finished-at="2024-03-27T14:05:16 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- log -->
+        </test-method> <!-- reverse -->
       </class> <!-- Udemy.Selenium.skiptest2 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
